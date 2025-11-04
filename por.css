@@ -1,0 +1,286 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+        
+        body {
+            overflow-x: hidden;
+            color: #f8f8f8;
+            display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   
+        }
+        
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        header {
+            position: relative;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(13, 43, 81, 0.85);
+            border-bottom: 2px solid #D9B611;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #F8F8F8;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        
+        .logo span {
+            color: #D9B611;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #F8F8F8;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            display: block;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+        
+        nav ul li a:hover {
+            background: rgba(217, 182, 17, 0.3);
+        }
+        
+        .submenu {
+            display: none;
+            position: absolute;
+            background: rgba(13, 43, 81, 0.95);
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            border-radius: 0 0 4px 4px;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        
+        .submenu li {
+            margin: 0;
+            width: 100%;
+        }
+        
+        .submenu li a {
+            padding: 12px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        nav ul li:hover .submenu {
+            display: block;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            color: #F8F8F8;
+        }
+        
+        .hero p {
+            font-size: 22px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #D9B611;
+            color: #0D2B51;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: 2px solid #D9B611;
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: #D9B611;
+        }
+        
+        .content {
+            position: relative;
+            background: rgba(13, 43, 81, 0.9);
+            padding: 60px 5%;
+            margin: 40px auto;
+            border-radius: 8px;
+            max-width: 1200px;
+        }
+        
+        .content h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #D9B611;
+        }
+        
+        .history-periods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .period {
+            background: rgba(248, 248, 248, 0.1);
+            padding: 25px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .period:hover {
+            transform: translateY(-5px);
+            background: rgba(248, 248, 248, 0.15);
+        }
+        
+        .period h3 {
+            color: #D9B611;
+            font-size: 24px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #D9B611;
+            padding-bottom: 10px;
+        }
+        
+        .period p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(13, 43, 81, 0.95);
+            color: #F8F8F8;
+            border-top: 2px solid #D9B611;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .submenu {
+                position: static;
+                display: none;
+                width: 100%;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+        }
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    background: rgba(0, 0, 0,.4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: justify;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}

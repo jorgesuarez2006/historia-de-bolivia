@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Bolivia - Tierra de Libertad y Cultura</title>
+    <link rel="stylesheet" href="por.css">
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="VID-20250731-WA0014.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <div class="overlay"></div>
+     
+    <header>
+        <div class="logo">Hechos y Sucesos Que<span> Marcaron La Historia de Boliviana</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="guerras y batallas.html">Guerras y Batallas</a>
+                </li>
+                <li>
+                    <a href="#">Hechos, Sucesos y Revoluciones</a>
+                    <ul class="submenu">
+                        <li><a href="hechos.html">Hechos</a></li>
+                        <li><a href="sucesos.html">Sucesos</a></li>
+                        <li><a href="revoluciones.html">Revoluciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galeria</a>
+                <ul class="submenu">
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="galeria.html">Imagenes</a></li>
+                       
+                </ul>
+               </li>
+            </ul>
+        </nav>
+    </header>
+    
+   <section class="content">
+        <h2>El Che Guevara: Un Símbolo de la Lucha por la Libertad y la Justicia</h2>
+        
+        <div class="history-periods">
+            <div class="period">
+                <p>Ernesto "Che" Guevara fue un hombre que dedicó su vida a la lucha por la justicia y la libertad. Después del triunfo de la revolución cubana, Guevara se convirtió en una figura clave en el gobierno de Fidel Castro, ocupando cargos importantes en el Banco Nacional y el Ministerio de Industria. Sin embargo, su pasión por la revolución no se detuvo ahí. Guevara comenzó a desarrollar la idea de lanzar una "revolución continental" en América Latina, con el objetivo de liberar a los pueblos oprimidos del imperialismo y la explotación.</p>
+                <p>Con esta visión, Guevara llegó a Bolivia en agosto de 1966, con la intención de unirse a la guerrilla que se estaba gestando en el país. A pesar de no contar con el apoyo de los revolucionarios locales, Guevara se lanzó a la lucha, combatiendo en la clandestinidad de las montañas bolivianas. Sin embargo, su suerte estaba echada. El 8 de octubre de 1967, Guevara fue herido y capturado por el Ejército boliviano en la quebrada del Yuro. Fue llevado a la escuelita de La Higuera, donde sería ejecutado al día siguiente.</p>
+                <p>La noche del 8 de octubre, Guevara pasó sus últimas horas de vida en la escuelita, rodeado de soldados que lo habían capturado. A pesar de la situación, Guevara se mantuvo firme en sus convicciones y se negó a dar información sobre sus compañeros de lucha. Al día siguiente, el 9 de octubre de 1967, el sargento Mario Terán recibió la orden de ejecutar al Che. Terán, quien años después recordaría el momento con dolor y arrepentimiento, disparó al Che en la escuelita de La Higuera.</p>
+                <p>Después de la ejecución, el cuerpo del Che fue trasladado a Vallegrande, donde fue colocado en un lavadero de mármol del hospital local para ser fotografiado. La imagen del Che muerto se convirtió en un símbolo de la lucha revolucionaria y la brutalidad del imperialismo. A pesar de su muerte, el legado del Che Guevara sigue vivo. Sus ideas de justicia y libertad siguen inspirando a millones de personas en todo el mundo, y su lucha por la independencia y la justicia social sigue siendo un ejemplo para aquellos que buscan un mundo más justo y equitativo. El Che Guevara es un símbolo de la lucha armada contra el imperialismo y la opresión, y su legado sigue siendo un llamado a la acción para aquellos que buscan un mundo mejor.</p>
+
+            </div>
+        </div>
+    </section>  
+    <script>
+        // Script para asegurar que el video se reproduzca con sonido (aunque muted por defecto por políticas de navegadores)
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video-background');
+            video.play();
+            
+            // Intentar activar sonido con interacción del usuario
+            document.addEventListener('click', function() {
+                video.muted = false;
+            }, { once: false });
+        });
+    </script>
+</body>
+</html>

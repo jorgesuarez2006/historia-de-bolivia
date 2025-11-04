@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Bolivia - Tierra de Libertad y Cultura</title>
+    <link rel="stylesheet" href="por.css">
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="VID-20250731-WA0014.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <div class="overlay"></div>
+     
+    <header>
+        <div class="logo">Hechos y Sucesos Que<span> Marcaron La Historia de Boliviana</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="guerras y batallas.html">Guerras y Batallas</a>
+                </li>
+                <li>
+                    <a href="#">Hechos, Sucesos y Revoluciones</a>
+                    <ul class="submenu">
+                        <li><a href="hechos.html">Hechos</a></li>
+                        <li><a href="sucesos.html">Sucesos</a></li>
+                        <li><a href="revoluciones.html">Revoluciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galeria</a>
+                <ul class="submenu">
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="galeria.html">Imagenes</a></li>
+                       
+                </ul>
+               </li>
+            </ul>
+        </nav>
+    </header>
+
+   <section class="content">
+        <h2>La Revolución Nacional de 1952: Un Punto de Inflexión en la Historia de Bolivia</h2>
+        
+        <div class="history-periods">
+            <div class="period">
+              <p>La Revolución Nacional de 1952 fue un proceso reformador que transformó a Bolivia de raíz, dejando atrás el coloniaje y el feudalismo para encaminarse hacia una nación democrática. Liderada por el Movimiento Nacionalista Revolucionario (MNR), esta revolución implementó una serie de reformas profundas que cambiaron la estructura social y económica del país.</p>
+              <p>Entre las reformas más destacadas se encuentran la nacionalización de las minas y los ferrocarriles, la reforma agraria y la ampliación del voto a mujeres y campesinos. Sin embargo, uno de los cambios más profundos y menos valorados fue la universalización de la educación, que abrió las puertas de la alfabetización a millones de bolivianos hasta entonces excluidos del sistema educativo.</p>
+              <p>La reforma educativa de 1955 estableció la universalidad y la obligatoriedad de la educación, lo que implicó hacer inversiones para la habilitación de escuelas en todo el país. Los efectos fueron notorios: la inasistencia escolar se redujo a la mitad en 26 años y se construyeron miles de escuelas en todo el país.</p>
+              <p>La reforma educativa también buscaba formar personas integrales, sanas, morales y con habilidades técnicas, y se enfocó en la educación activa y práctica, centrada en el estudiante. Los principios fundamentales de esta reforma sobrevivieron a regímenes militares y cambios de gobierno hasta mediados de los años 90.</p>
+              <p>La Revolución Nacional de 1952 fue un punto de inflexión en la historia de Bolivia, ya que sentó las bases para la construcción de una sociedad más justa y equitativa. La universalización de la educación fue un paso importante hacia la democratización del país y permitió que millones de bolivianos accedieran a la educación y mejoraran su calidad de vida.</p>
+            </div>
+        </div>
+    </section>  
+            
+    <script>
+        // Script para asegurar que el video se reproduzca con sonido (aunque muted por defecto por políticas de navegadores)
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video-background');
+            video.play();
+            
+            // Intentar activar sonido con interacción del usuario
+            document.addEventListener('click', function() {
+                video.muted = false;
+            }, { once: false });
+        });
+    </script>
+</body>
+</html>

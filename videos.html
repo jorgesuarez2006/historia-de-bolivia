@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Bolivia - Tierra de Libertad y Cultura</title>
+    <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="VID-20250731-WA0014.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <div class="overlay"></div>
+     
+    <header>
+        <div class="logo">Hechos y Sucesos Que<span> Marcaron La Historia de Boliviana</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="guerras y batallas.html">Guerras y Batallas</a>
+                </li>
+                <li>
+                    <a href="#">Hechos, Sucesos y Revoluciones de Bolivia</a>
+                    <ul class="submenu">
+                        <li><a href="hechos.html">Hechos</a></li>
+                        <li><a href="sucesos.html">Sucesos</a></li>
+                        <li><a href="revoluciones.html">Revoluciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galeria</a>
+                <ul class="submenu">
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="galeria.html">Imagenes</a></li>
+                       
+                </ul>
+               </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="card">
+        <div class="face front">
+            <iframe width="300" height="315" src="https://www.youtube.com/embed/VVezSNcY814?si=19-E5YDJcLhP1FqO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </div>
+    </div>
+    <div class="card">   
+        <div class="face front">
+            <iframe width="300" height="315" src="https://www.youtube.com/embed/baGieJNeZqw?si=VpOvcDNL7LSHjY9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </div>
+    </div>
+    <div class="card">
+        <div class="face front">
+           <iframe width="300" height="315" src="https://www.youtube.com/embed/xYsgjvpp2oQ?si=48oxk7FHstwjjUZf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class="face front">
+            <iframe width="300" height="315" src="https://www.youtube.com/embed/hvpfXrLd1SY?si=qqgfJOvUFlaX-rSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </div>
+    </div>
+   
+    <script>
+        // Script para asegurar que el video se reproduzca con sonido (aunque muted por defecto por políticas de navegadores)
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video-background');
+            video.play();
+            
+            // Intentar activar sonido con interacción del usuario
+            document.addEventListener('click', function() {
+                video.muted = false;
+            }, { once: false });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Bolivia - Tierra de Libertad y Cultura</title>
+    <link rel="stylesheet" href="por.css">
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="VID-20250731-WA0014.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <div class="overlay"></div>
+     
+    <header>
+        <div class="logo">Hechos y Sucesos Que<span> Marcaron La Historia de Boliviana</span></div>
+        <nav>
+            <ul>
+                <li><a href="por.html">Inicio</a></li>
+                <li>
+                    <a href="guerras y batallas.html">Guerras y Batallas</a>
+                </li>
+                <li>
+                    <a href="#">Hechos, Sucesos y Revoluciones</a>
+                    <ul class="submenu">
+                        <li><a href="hechos.html">Hechos</a></li>
+                        <li><a href="sucesos.html">Sucesos</a></li>
+                        <li><a href="revoluciones.html">Revoluciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galeria</a>
+                <ul class="submenu">
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="galeria.html">Imagenes</a></li>
+                       
+                </ul>
+               </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Descubre la Rica Historia de Bolivia</h1>
+        <p>Una tierra de contrastes, luchas libertarias y culturas milenarias que forjaron una nación única en el corazón de Sudamérica.</p>
+        <a href="#" class="btn">Explorar Historia</a>
+    </section>
+    
+    
+    <script>
+        // Script para asegurar que el video se reproduzca con sonido (aunque muted por defecto por políticas de navegadores)
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video-background');
+            video.play();
+            
+            // Intentar activar sonido con interacción del usuario
+            document.addEventListener('click', function() {
+                video.muted = false;
+            }, { once: false });
+        });
+    </script>
+</body>
+</html>
